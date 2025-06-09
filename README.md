@@ -66,15 +66,15 @@ I designed a normalized relational database schema in PostgreSQL, ensuring refer
 ## Deliverables:
 ### Daily Snapshot Dashboard
 
-![Daily Snapshot](./Screenshots/daily_snapshot.png)
+![Daily Snapshot](./screenshots/daily_snapshot.png)
 
 ### Monthly Overview Dashboard
 
-![Monthly Overview](./Screenshots/monthly_overview.png)
+![Monthly Overview](./screenshots/monthly_overview.png)
 
 ### Historical Overview Dashboard
 
-![Historical Overview](./Screenshots/historical_overview.png)
+![Historical Overview](./screenshots/historical_overview.png)
 
 ## Conclusion:
 In this project, I was able to simulate building a full business intelligence pipeline from raw data to executive dashboards using real-world data and industry-standard tools. It demonstrates my SQL, data modeling, and Tableau skills applied in a business context.
