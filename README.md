@@ -14,7 +14,7 @@ In this project, I built a full-stack retail ETL pipeline using Excel, SQL, Post
 **Citation:** Chen, D. (2015). Online Retail [Dataset]. UCI Machine Learning Repository. https://doi.org/10.24432/C5BW33  
 **Size:** 406,829 rows (transactional data)
 
-### Database Design:
+## Database Design:
 I designed a normalized relational database schema in PostgreSQL, ensuring referential integrity across customer, invoice, and product data data. The schema follows a star-schema-like structure to optimize for analysis and joins.
 
 ### Schema:
@@ -27,8 +27,8 @@ I designed a normalized relational database schema in PostgreSQL, ensuring refer
 
 * Note: Some referential integrity loss occurred during normalization due to missing customer IDs in original data.
 
-### SQL Analysis:
-**Basic Analysis:**
+## SQL Analysis:
+### Basic Analysis:
 * Total sales
 * Total customers
 * Sales by country
@@ -36,7 +36,7 @@ I designed a normalized relational database schema in PostgreSQL, ensuring refer
 * Sales by customer
 * Monthly revenue over time
 
-**Churn Analysis:**  
+### Churn Analysis:
 * Identify churned customers
 * Churn rate 
 * Churn rate by country
@@ -44,27 +44,37 @@ I designed a normalized relational database schema in PostgreSQL, ensuring refer
     * high-value vs low-value using median total expenditure as cutoff
     * utilized chained CTEs  
 
-**Advanced Analysis:**
+### Advanced Analysis:
 * 7 day revenue rolling average over time
     * utilized a window function and CTE
 * Calendar heatmap for revenue
     * utilized date scaffolding
 
-**Trend Analysis:**  
+### Trend Analysis:  
 * Revenue pacing
 * Time-based KPIs (daily, monthly, alltime)
     * orders
     * revenue
     * customers
 
-### Architecture Decisions:
+## Architecture Decisions:
 * Created PostgreSQL views to pre-compute KPI metrics.  
 * Utilized a live Postgres connection in Tableau for real-time updates
 * Utilized parameter controls and calculated fields to dynamically select dates and months for filtering daily and monthly views.
 * Built navigation buttons between multiple dashboards to allow user-friendly exploration.
 
-Deliverables:
+## Deliverables:
+### Daily Snapshot Dashboard
 
+![Daily Snapshot](./Screenshots/daily_snapshot.png)
 
-### Conclusion:
+### Monthly Overview Dashboard
+
+![Monthly Overview](./Screenshots/monthly_overview.png)
+
+### Historical Overview Dashboard
+
+![Historical Overview](./Screenshots/historical_overview.png)
+
+## Conclusion:
 In this project, I was able to simulate building a full business intelligence pipeline from raw data to executive dashboards using real-world data and industry-standard tools. It demonstrates my SQL, data modeling, and Tableau skills applied in a business context.
